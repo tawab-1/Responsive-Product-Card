@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#main {
+  width: 100%;
+  height: 100vh;
+  background-color: #f2ebe3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#main-inner-container {
+  width: 90%;
+  height: 95%;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 1px 1px 10px 1px #00000027;
+}
+#inner-top {
+  height: 60%;
+  width: 100%;
+  background: url(./images/image-product-mobile.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 8px 8px 0px 0px;
+}
+#text-container h1 {
+  margin-left: 25px;
+  margin-top: 15px;
+  font-family: "Fraunces", serif;
+}
+#text-container p {
+  margin-left: 25px;
+  margin-top: 20px;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.lighter-text {
+  color: #73757bd2;
+}
+.price h1 {
+  font-family: "Fraunces", serif;
+  color: #3c8067;
+  font-weight: 700;
+}
+span {
+  font-size: 21px;
+  text-decoration: line-through;
+  padding-left: 20px;
+  height: 70px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  font-weight: 500;
+}
+#button-container {
+  display: flex;
+  justify-content: center;
+}
+button {
+  width: 90%;
+  height: 45px;
+  background-color: #3c8067;
+  border: none;
+  margin-top: 10px;
+  border-radius: 8px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+  font-weight: 700;
+  font-size: 19px;
+  cursor: pointer;
+}
+button img {
+  width: 20px;
+  height: 20px;
+}
+button:active {
+  background-color: #6c7289;
+}
+
+@media only screen and (min-width: 576px) {
+  #main-inner-container {
+    max-width: 80%;
+    display: flex;
+    align-items: center;
+    height: 60%;
+  }
+  #inner-top {
+    height: 100%;
+    flex-basis: 50%;
+    background: url(./images/image-product-desktop.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 8px 0px 0px 8px;
+    flex-shrink: 1;
+  }
+
+  #inner-bottom {
+    height: 100%;
+    flex-basis: 50%;
+    flex-shrink: 1;
+  }
+  #text-container h1 {
+    font-size: 32px;
+    margin-top: 30px;
+    margin-right: 10px;
+  }
+  #text-container p {
+    font-size: 16px;
+    margin-top: 35px;
+    margin-right: 1em;
+  }
+  button {
+    margin-top: 25px;
+    border-radius: 10px;
+  }
+}
+
+@media only screen and (min-width: 766px) {
+  #main-inner-container {
+    max-width: 80%;
+    display: flex;
+    align-items: center;
+    height: 60%;
+  }
+  #inner-top {
+    height: 100%;
+    flex-basis: 50%;
+    background: url(./images/image-product-desktop.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 8px 0px 0px 8px;
+    flex-shrink: 1;
+  }
+
+  #inner-bottom {
+    height: 100%;
+    flex-basis: 50%;
+    flex-shrink: 1;
+  }
+  #text-container h1 {
+    font-size: 32px;
+    margin-top: 35px;
+    margin-right: 15px;
+  }
+  #text-container p {
+    font-size: 14px;
+    margin-top: 35px;
+    margin-right: 15px;
+  }
+  button {
+    margin-top: 25px;
+    border-radius: 10px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  #main-inner-container {
+    max-width: 65%;
+    display: flex;
+    align-items: center;
+    height: 60%;
+  }
+  #inner-top {
+    height: 100%;
+    flex-basis: 50%;
+    background: url(./images/image-product-desktop.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 8px 0px 0px 8px;
+    flex-shrink: 1;
+  }
+
+  #inner-bottom {
+    height: 100%;
+    flex-basis: 50%;
+    flex-shrink: 1;
+  }
+  #text-container h1 {
+    font-size: 30px;
+    margin-top: 37px;
+    margin-right: 15px;
+  }
+  #text-container p {
+    font-size: 15px;
+    margin-top: 37px;
+    margin-right: 15px;
+  }
+  button {
+    margin-top: 28px;
+    border-radius: 10px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  #main-inner-container {
+    max-width: 55%;
+    display: flex;
+    align-items: center;
+    height: 60%;
+  }
+  #inner-top {
+    height: 100%;
+    flex-basis: 50%;
+    background: url(./images/image-product-desktop.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 8px 0px 0px 8px;
+    flex-shrink: 1;
+  }
+
+  #inner-bottom {
+    height: 100%;
+    flex-basis: 50%;
+    flex-shrink: 1;
+  }
+  #text-container h1 {
+    font-size: 32px;
+    margin-top: 40px;
+    margin-right: 20px;
+  }
+  #text-container p {
+    font-size: 22px;
+    margin-top: 30px;
+    margin-right: 20px;
+  }
+  button {
+    margin-top: 35px;
+    border-radius: 10px;
+  }
+}
